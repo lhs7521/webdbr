@@ -1,0 +1,11 @@
+textarea {
+    width:100%;
+}
+
+input[type=submit] {
+    margin-top:10px;
+}
+
+.brand {font-size: 20pt; color: black; font-weight: bold; text-decoration: none;}
+.login-link {font-size: 12pt; float: right; text-decoration: none;}
+.login-link:visited {color: blue;}
