@@ -9,3 +9,18 @@ input[type=submit] {
 .brand {font-size: 20pt; color: black; font-weight: bold; text-decoration: none;}
 .login-link {font-size: 12pt; float: right; text-decoration: none;}
 .login-link:visited {color: blue;}
+
+
+a.su-link {
+    font-size: 12pt;
+    float: right;
+    text-decoration: none;
+}
+
+a.su-link:visited {
+    color: blue;
+}
+
+a.qc:visited {
+    color: blue;
+}

@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
+
     {% if question_list %}
     <ul>
     {% for question in question_list %}
-        <li><a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a></li>
+        <li><a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a>
+        {% if question.answer_set.count > 0 %}
+    <span class="text-danger">({{ question.answer_set.count }})</span></li>
+    {% endif %}
     {% endfor %}
     </ul>
+<a class="qc" href="{% url 'pybo:question_create' %}">질문 등록하기</a>
 {% else %}
     <p>질문이 없습니다.</p>
 {% endif %}
